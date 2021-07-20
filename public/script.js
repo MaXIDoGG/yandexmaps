@@ -78,6 +78,8 @@ ymaps.ready(function () {
                 properties: {
                     iconContent: +key + 1,
                     hintContent: loc.name,
+                    balloonContentHeader: loc.name,
+                    balloonContentBody: `Широта: ${loc.lat}<br>Долгота: ${loc.long}`
                 }
             }, {
                 preset: 'islands#blackStretchyIcon',
